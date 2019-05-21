@@ -1,0 +1,29 @@
+   .site-header {
+       .nav-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .main-navigation{
+                ul  {
+display: block;
+                }
+                li{
+                    display: flex;
+                    margin: 5 em;
+                    justify-content: right;
+                }
+
+              }
+       }
+
+    flex-direction: column;
+    background: url(../../assets/images/home-hero.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    .site-branding {
+        .site-logo img {
+      width: 50px;
+        }
+    }
+}

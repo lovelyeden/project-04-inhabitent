@@ -1,7 +1,22 @@
 footer {
-	display: flex;
-	flex-direction: row;
-	background: url(../assets/images/dark-wood.png);
-    width: 100px;
-    height:20px;
+  display: flex;
+  flex-direction: column;
+  background: url(../../assets/images/dark-wood.png);
+  background-size: cover;
+  .first-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:50px;
+    .footer-logo {
+    height: auto;
+    }
+    h3 {
+        color:#d99054;
+    }
+  }
+  .copyright{
+      text-align: center;
+  }
 }

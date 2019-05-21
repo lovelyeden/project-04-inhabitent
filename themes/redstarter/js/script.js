@@ -1,4 +1,3 @@
-(function($){
-    $('body').append('hello world');
+// (function($){
 
-}) (jQuery); //end of js file
+// }) (jQuery); //end of js file
