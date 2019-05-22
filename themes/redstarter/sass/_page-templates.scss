@@ -3,3 +3,46 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-page-hero {
+  background: url(../../assets/images/home-hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  front-page-logo {
+    text-align: center;
+  }
+}
+.fp-journal {
+  .journal-container {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    h2 {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        border: 1px solid #e1e1e1;
+        .post-text {
+            padding: 2em;
+            }
+        }
+      }
+    }
+  }
+  .shop-container{
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+

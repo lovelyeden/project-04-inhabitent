@@ -705,6 +705,51 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-hero {
+  background: url(../../assets/images/home-hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .front-page-hero front-page-logo {
+    text-align: center; }
+
+.fp-journal .journal-container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em; }
+  .fp-journal .journal-container h2 {
+    text-align: center; }
+  .fp-journal .journal-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .fp-journal .journal-container ul li {
+      border: 1px solid #e1e1e1; }
+      .fp-journal .journal-container ul li .post-text {
+        padding: 2em; }
+
+.shop-container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -736,33 +781,28 @@ footer {
     text-align: center; }
 
 .site-header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: url(../../assets/images/home-hero.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh; }
+  position: absolute;
+  width: 100%; }
   .site-header .nav-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .site-header .nav-container .main-navigation ul {
-      display: block; }
-    .site-header .nav-container .main-navigation li {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin: 5 em;
-      -webkit-box-pack: right;
-          -ms-flex-pack: right;
-              justify-content: right; }
-  .site-header .site-branding .site-logo img {
-    width: 50px; }
+            justify-content: space-between; }
+    .site-header .nav-container .site-branding .site-logo {
+      width: 40%;
+      margin-top: 1em; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .main-navigation li {
+    padding-left: 1.5rem; }
