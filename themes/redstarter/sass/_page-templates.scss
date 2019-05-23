@@ -5,8 +5,9 @@
 /* Front page */
 
 .front-page-hero {
-  background: url(../../assets/images/home-hero.jpg);
-  background-size: cover;
+  background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4))
+  ,#969696 url(../../assets/images/home-hero.jpg) no-repeat top; 
+  background-size: cover, cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -16,6 +17,44 @@
     text-align: center;
   }
 }
+.shop-container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  h2 {
+    text-align: center;
+  }
+  .product-terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+    .product-term {
+      flex: 1;
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      text-align: center;
+      max-width: 23%;
+      height: 260px;
+
+      .link {
+        text-decoration: none;
+        background: $color_link_button;
+        
+        padding: 0.7rem;
+        color:$color_font;
+      }
+    }
+    img {
+      margin-top: 1em;
+      max-width: 30%;
+    }
+  }
+}
+
 .fp-journal {
   .journal-container {
     width: 1120px;
@@ -33,16 +72,13 @@
       padding: 0;
       li {
         border: 1px solid #e1e1e1;
+        flex: 1;
+        max-width: 32%;
+        height: 450px;
         .post-text {
-            padding: 2em;
-            }
+          padding: 1em;
         }
       }
     }
   }
-  .shop-container{
-    width: 1120px;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
+}
