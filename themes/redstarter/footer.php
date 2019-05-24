@@ -23,18 +23,18 @@
 			<p><span><i class="fa fa-phone"></i></span><a href="tel:7784567891">778-456-7891</a></p>
 
 			<p>
-			<span><i class="fab fa-facebook-square"></i></span>
-			<span><i class="fab fa-twitter-square"></i></span>
-			<span><i class="fab fa-google-plus-square"></i></span>
+			<span> <i class="fab fa-facebook-square"> </i></span>
+			<span> <i class="fab fa-twitter-square"> </i></span>
+			<span> <i class="fab fa-google-plus-square"> </i></span>
 			</p>
 		</div>
 
 		<!--Business Hours-->
 		<div class="business-container">
 			<h3>Business Hours</h3>
-			<p><span>Monday-Friday:</span>9am to 5pm</p>
-			<p><span>Saturday:10am to 2pm</span></p>
-			<p><span>Sunday:Closed</span></p>
+			<p><span><strong>Monday-Friday:</strong></span>9am to 5pm</p>
+			<p><span><strong>Saturday:</strong> 10am to 2pm</span></p>
+			<p><span><strong>Sunday:</strong> Closed</strong></span></p>
 		</div>
 
 		<div class="footer-logo">
@@ -43,11 +43,11 @@
 	</div><!--End of first container -->
 	<div>
 		<div class="copyright">
-			<h2>Copyright &copy; 2019 Inhabitent</h2>
+			Copyright &copy; 2019 Inhabitent
 		</div>
 	</div>
 </footer><!-- #colophon -->
-	
+
 		<?php wp_footer();?>
 
 	</body>

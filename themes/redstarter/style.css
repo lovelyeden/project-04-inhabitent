@@ -826,6 +826,10 @@ object {
       .fp-journal .journal-container ul li .post-text {
         padding: 1em;
         margin-bottom: 2em; }
+        .fp-journal .journal-container ul li .post-text .fp-post-meta {
+          font-family: 'Merriweather Web', sans-serif;
+          font-weight: normal;
+          font-style: normal; }
         .fp-journal .journal-container ul li .post-text a {
           text-decoration: none; }
         .fp-journal .journal-container ul li .post-text h3 {
@@ -841,20 +845,40 @@ object {
           color: #000;
           font-size: 0.9rem;
           line-height: 1; }
+          .fp-journal .journal-container ul li .post-text .read-more-btn:hover {
+            background: #248a83;
+            color: #fff; }
 
-.adventure-section h2 {
-  text-align: center; }
-
-.adventure-section .adventure-container {
-  margin: auto;
-  width: 1120px;
-  margin-bottom: 2em;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto; }
-  .adventure-section .adventure-container div {
-    max-width: 100%; }
+.adventure-section {
+  margin-top: 2em;
+  margin-bottom: 5rem; }
+  .adventure-section h2 {
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+  .adventure-section .adventure-container {
+    margin: auto;
+    width: 1120px;
+    margin-bottom: 2em;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto; }
+    .adventure-section .adventure-container div {
+      max-width: 100%; }
+  .adventure-section .adventure-btn {
+    margin: auto;
+    width: 1120px; }
+    .adventure-section .adventure-btn a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.8em;
+      background: #248a83;
+      font-size: 18px;
+      color: #fff; }
 
 /* This is for grid item*/
 .item1 {
@@ -898,6 +922,30 @@ object {
   .item4 img {
     width: 10px; }
 
+/* About Page */
+.entry-content {
+  margin-bottom: 3em; }
+  .entry-content .hero-image-header {
+    height: 100vh; }
+    .entry-content .hero-image-header .entry-title {
+      color: #fff;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 3rem; }
+  .entry-content h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2f1339;
+    font-family: 'Novecento Sans Web', sans-serif; }
+  .entry-content p {
+    margin-bottom: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    font-family: Merriweather Web, serif;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2em; }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -909,6 +957,9 @@ footer {
   background: url(../../assets/images/dark-wood.png);
   background-size: cover; }
   footer .first-container {
+    width: 1120px;
+    margin: auto;
+    margin-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -916,43 +967,71 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-top: 50px; }
-    footer .first-container .footer-logo {
-      height: auto; }
-    footer .first-container h3 {
+    footer .first-container .contact-container h3 {
       color: #d99054; }
+    footer .first-container .contact-container p {
+      font-family: Merriweather Web, serif;
+      color: #fff; }
+      footer .first-container .contact-container p i {
+        padding: 0.2em;
+        font-size: 1.2rem; }
+      footer .first-container .contact-container p a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5em; }
+    footer .first-container .business-container {
+      margin: 0; }
+      footer .first-container .business-container h3 {
+        color: #d99054;
+        font-size: 20px; }
+      footer .first-container .business-container p {
+        font-family: Merriweather Web, serif;
+        color: #fff; }
+        footer .first-container .business-container p span {
+          color: #fff;
+          padding: 0.5em; }
+    footer .first-container .footer-logo {
+      text-align: right; }
+      footer .first-container .footer-logo img {
+        width: 70%; }
   footer .copyright {
-    text-align: center; }
+    text-align: center;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 3em;
+    padding-bottom: 1em; }
 
 .site-header {
   position: absolute;
   width: 100%; }
   .site-header .nav-container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 1120px;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0.6em; }
     .site-header .nav-container .site-branding .site-logo {
-      width: 40%;
-      margin-top: 1em; }
+      width: 30%; }
 
 .main-navigation {
-  font-family: '',sans-serif;
+  font-family: '', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-style: normal;
+  font-weight: normal; }
   .main-navigation div ul li {
     padding-left: 1.5rem; }
     .main-navigation div ul li a {

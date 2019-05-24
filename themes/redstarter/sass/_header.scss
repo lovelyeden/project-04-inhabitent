@@ -2,21 +2,25 @@
   position: absolute;
   width: 100%;
   .nav-container {
-    align-items: center;
+    width: 1120px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 0.6em;
     .site-branding {
       .site-logo {
-        width: 40%;
-        margin-top: 1em;
+        width: 30%;
       }
     }
   }
 }
 .main-navigation {
-  font-family: '',sans-serif;
+  font-family: '', sans-serif;
   display: flex;
   justify-content: flex-end;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   div {
     ul {
       li {
