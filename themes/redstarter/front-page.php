@@ -16,7 +16,7 @@ get_header();?>
 
 		<!-- shop section -->
 		<section class="shop-container">
-			<h2>Shop Stuff</h2>
+			<h2 class="shop">Shop Stuff</h2>
 		<?php
 $terms = get_terms(array('taxonomy' => 'product-type', 'hide_empty' => 0)
 );
@@ -46,29 +46,29 @@ endforeach;
 				<h2>Inhabitent Journal</h2>
 				<ul>
 			<?php $args = array('post_type' => 'post', 'posts_per_page' => 3, 'order' => 'ASC');
-			$journal_posts = get_posts($args); // returns an array of posts
-			?>
+$journal_posts = get_posts($args); // returns an array of posts
+?>
 			<?php foreach ($journal_posts as $post): setup_postdata($post);?>
-					<li>
-					<!-- Post thumbnail -->
-					<?php if (has_post_thumbnail()) {?>
-						<div class="thumbnail-wrapper">
-						<?php the_post_thumbnail('large');?>
-						</div>
-						
-						<?php }?>
-						<div class="post-text">
-						<div class="fp-post-meta">
-						<?php echo get_the_date(); ?>
-						<?php echo get_comments_number(); ?>
-						</div>
+							<li>
+							<!-- Post thumbnail -->
+							<?php if (has_post_thumbnail()) {?>
+								<div class="thumbnail-wrapper">
+								<?php the_post_thumbnail('large');?>
+								</div>
 
-						<!-- Post title -->
-						<a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title();?></h3></a>
-						<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
-						</div>
-						</li>
-						<?php endforeach;
+								<?php }?>
+								<div class="post-text">
+								<div class="fp-post-meta">
+								<?php echo get_the_date(); ?>
+								<?php echo get_comments_number(); ?>
+								</div>
+
+								<!-- Post title -->
+								<a href="<?php echo get_the_permalink(); ?>"><h3><?php the_title();?></h3></a>
+								<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+								</div>
+								</li>
+								<?php endforeach;
 
 wp_reset_postdata();?>
 </ul>
@@ -76,7 +76,25 @@ wp_reset_postdata();?>
 			</section><!-- #end of fp-journal -->
 
 	<section class="adventure-section">
-			<h2>Latest Adventures</h2>
+		<h2>Latest Adventures</h2>
+		<div class="adventure-container">
+			<div class="item1">
+				
+			</div>
+
+			<div class="item2">
+				<p>2</p>
+			</div>
+
+			<div class="item3">
+				<p>3</p>
+			</div>
+
+			<div class="item4">
+				<p>4</p>
+			</div>
+
+		</div><!--adventure-container-->
 	</section>
 
 
