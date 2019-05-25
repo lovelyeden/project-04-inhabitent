@@ -1,6 +1,35 @@
+/* Home and Page About */
+
+.home,
+.page-template-default {
+  .site-header {
+    position: absolute;
+    a {
+      color: white;
+    }
+    .logo-green {
+      display: none;
+    }
+    .logo-white {
+      display: block;
+    }
+  }
+}
+
+/* Pages */
+
 .site-header {
-  position: absolute;
+  border:1px solid #e1e1e1;
   width: 100%;
+  .logo-green {
+    display: block;
+  }
+  .logo-white {
+    display: none;
+  }
+  a {
+    color: $color_link;
+  }
   .nav-container {
     width: 1120px;
     margin: auto;
@@ -9,25 +38,22 @@
     margin-top: 0.6em;
     .site-branding {
       .site-logo {
-        width: 30%;
+        img {
+          width: 30%;
+        }
       }
     }
-  }
-}
-.main-navigation {
-  font-family: '', sans-serif;
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Novecento Sans Web', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  div {
-    ul {
+    .main-navigation {
+      font-family: '', sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-style: normal;
+      font-weight: normal;
       li {
         padding-left: 1.5rem;
         a {
           text-transform: uppercase;
-          color: #fff;
         }
       }
     }

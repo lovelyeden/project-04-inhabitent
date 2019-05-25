@@ -222,19 +222,17 @@
 }
 
 /* About Page */
-.entry-header {
-  .entry-title {
+.page-template-default {
+  h1 {
+    color: $color_font;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 3rem;
   }
 }
 .entry-content {
   margin-bottom: 3em;
   .hero-image-header {
     height: 100vh;
-    .entry-title {
-      color: $color_font;
-      font-family: 'Novecento Sans Web', sans-serif;
-      font-size: 3rem;
-    }
   }
   h2 {
     text-align: center;

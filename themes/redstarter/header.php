@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo('pingback_url');?>">
-<!-- 
+<!--
 		<link rel="stylesheet" href="./build/css/style.min.css"> -->
 	<?php wp_head();?>
 	</head>
@@ -26,7 +26,10 @@
 
 					<div class="site-branding">
 						<div class="site-logo">
-							<a href="home.php" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg"></a>
+							<a href="<?php echo home_url('/'); ?>" rel="home">
+								<img class="logo-green" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent.svg">
+								<img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg">
+							</a>
 						</div>
 
 					<!-- <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a></h1> -->
