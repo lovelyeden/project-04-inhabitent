@@ -48,7 +48,7 @@ endforeach;
 
 
 
-								<?php
+										<?php
     get_template_part('template-parts/content');
     ?>
 
@@ -63,7 +63,7 @@ endforeach;
 
 
 
-													<?php endwhile;?>
+															<?php endwhile;?>
 
 
 
