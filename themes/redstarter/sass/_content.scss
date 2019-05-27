@@ -47,3 +47,38 @@
 .bypostauthor {
   display: block;
 }
+
+.post-template-default {
+  .site-content {
+    display: flex;
+    width: 1120px;
+    margin: auto;
+    .content-area {
+      padding: 4%;
+      border-right: 1px solid #e1e1e1;
+    }
+    .widget-area {
+      padding: 4%;
+    }
+  }
+  .entry-header {
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  h1 {
+    top: 4%;
+    position: absolute;
+    padding: 0.5em;
+    background: $color_link;
+    color: $color_font;
+  }
+  .entry-meta {
+ position: absolute;
+    right: 0;
+    bottom: 7px;
+    background: $color_link;
+    color: $color_font;
+  }
+}

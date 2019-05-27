@@ -3,20 +3,68 @@
     text-align: center;
   }
   .product-terms {
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    .product-term {
+width: 1120px;
+margin: 0;
+
+    
+  }
+
+p {
+      margin-bottom: 0;
       a {
         text-decoration: none;
-        font-size: 1em;
-        padding: 2em;
-        text-transform: uppercase;
         color: $color_link;
+        text-transform: uppercase;
+      font-family: Novecento Sans Web, sans-serif;
+
       }
     }
+  
+  
+
+.product-grid{
+    margin-left: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  display: grid;
+  width: 1120px;
+
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.5rem;
+  article{
+        border-right: 1px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    .entry-header{
+      width: 100%;
+      height: 250px;
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    p{
+      margin:0;
+    }
   }
-  .article
+}
+
+}
+
+
+/* Taxonomy*/
+.taxonomy-container{
+  border-top: 1px dashed #e1e1e1;
+  width: 1120px;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.5rem;
+}
+.taxonomy-description{
+  text-align: center;
 }

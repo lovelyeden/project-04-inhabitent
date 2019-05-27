@@ -153,13 +153,25 @@
     margin-bottom: 2em;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 2f 2fr;
     grid-template-rows: auto auto;
     div {
       max-width: 100%;
+      h1{
+        color: #fff;
+        margin-left:5%;
+        font-family: 'Merriweather Web', serif;
+        font-weight: 400;
+      }
+      a{
+        padding: 2%;
+               margin-left:5%;
+       border: 1px solid #fff;
+    color: #fff; 
+      }
     }
   }
-  .adventure-btn {
+  .adventure-btn { 
     margin: auto;
     width: 1120px;
     a {
@@ -171,58 +183,63 @@
       color: $color_font;
     }
   }
-}
-/* This is for grid item*/
-.item1 {
-  background: url(../../assets/images/adventure-photos/canoe-girl.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  grid-row-start: 1;
-  grid-row-end: 9;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  img {
-    width: 10px;
-  }
-}
-.item2 {
-  background: url(../../assets/images/adventure-photos/beach-bonfire.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  img {
-    width: 10px;
-  }
-}
 
-.item3 {
-  background: url(../../assets/images/adventure-photos/mountain-hikers.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row-start: 5;
-  grid-row-end: 9;
-  img {
-    width: 10px;
+  /* This is for grid item*/
+  .item1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/images/adventure-photos/canoe-girl.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    img {
+      width: 10px;
+    }
   }
-}
+  .item2 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/beach-bonfire.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    img {
+      width: 10px;
+    }
+  }
 
-.item4 {
-  background: url(../../assets/images/adventure-photos/night-sky.jpg);
-  background-position: center;
-  background-size: cover;
-  grid-row-start: 5;
-  grid-row-end: 9;
-  img {
-    width: 10px;
+  .item3 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/mountain-hikers.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    img {
+      width: 10px;
+    }
+  }
+
+  .item4 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/night-sky.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    img {
+      width: 10px;
+    }
   }
 }
 
 /* About Page */
-.page-template-default {
+.page-template {
   h1 {
     color: $color_font;
     font-family: 'Novecento Sans Web', sans-serif;
@@ -231,6 +248,7 @@
 }
 .entry-content {
   margin-bottom: 3em;
+  margin-top: auto;
   .hero-image-header {
     height: 100vh;
   }
@@ -245,7 +263,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 800px;
-    font-family: Merriweather Web, serif;
+    font-family: 'Merriweather Web', serif;
     text-align: justify;
     font-size: 1rem;
     line-height: 2em;

@@ -55,10 +55,16 @@ function inhabitent_body_class_for_pages($classes)
 }
 add_filter('body_class', 'inhabitent_body_class_for_pages');
 
-if (is_post_type_archive('product')) {
-    $query->set('posts_per_page', 16);
-    return;
+function inhabitent_pre_get_posts($query)
+{
+    if (is_post_type_archive('product') &&
+        !is_admin() && $query->is_main_query()
+    ) {
+        $query->set('posts_per_page', 16);
+    }
 }
+
+add_action('pre_get_posts', 'inhabitent_pre_get_posts');
 
 function shop_archive_title($title)
 {
@@ -68,5 +74,3 @@ function shop_archive_title($title)
     return $title;
 }
 add_filter('get_the_archive_title', 'shop_archive_title');
-
-function 

@@ -1,7 +1,7 @@
 /* Home and Page About */
 
 .home,
-.page-template-default {
+.page-template{
   .site-header {
     position: absolute;
     a {
@@ -17,9 +17,7 @@
 }
 
 /* Pages */
-
 .site-header {
-  border:1px solid #e1e1e1;
   width: 100%;
   .logo-green {
     display: block;
@@ -58,4 +56,13 @@
       }
     }
   }
+}
+
+
+.blog, .archive,
+.product-tempalte-default,
+.post-template-default{
+.site-header{
+  border: 1px solid #e1e1e1;
+}
 }

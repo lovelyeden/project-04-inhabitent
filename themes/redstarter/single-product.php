@@ -1,64 +1,44 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single product.
  *
  * @package RED_Starter_Theme
  */
 
 get_header();?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+		<main id="main" class="single-product" role="main">
+		<div class="single-product-container">
 		<?php while (have_posts()): the_post();?>
-    
-        
+
+						<div class="image-container">
+						<?php if (has_post_thumbnail()): ?>
+						<?php the_post_thumbnail('large');?>
+						<?php endif;?>
+				</div><!-- end of image-container -->
 
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	    <header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-		<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+				<div class="entry-content">
+				<?php the_title('<h1 class="entry-title">', '</h1>');?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<p class="price"><?php echo CFS()->get('product_price'); ?><p>
+				<?php the_content();?>
 
-		<div class="entry-meta">
-		<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	    </header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
-
-<?php echo CFS()->get('product_price'); ?>
+				<div class="social-media">
+			<p>
+			<span><a><i class="fab fa-facebook-f"></i>Like</a></span>
+			<span><a><i class="fab fa-twitter"></i>Tweet</a></span>
+			<span><a><i class="fab fa-pinterest-p"></i>Pin</a></span>
+			</p>
+				<div>
+				</div><!-- .entry-content -->
 
 
-				<?php the_post_navigation();?>
 
-				<?php
-    // If comments are open or we have at least one comment, load up the comment template.
-    if (comments_open() || get_comments_number()):
-        comments_template();
-    endif;
-    ?>
+<?php endwhile; // End of the loop. ?>
 
-			<?php endwhile; // End of the loop. ?>
+</div><!--single-product-container  -->
+</main><!-- #main -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
-<?php get_sidebar();?>
 <?php get_footer();?>
