@@ -74,3 +74,4 @@ function shop_archive_title($title)
     return $title;
 }
 add_filter('get_the_archive_title', 'shop_archive_title');
+

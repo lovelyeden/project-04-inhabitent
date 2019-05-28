@@ -5,8 +5,7 @@
     width: 1120px;
     margin-left: auto;
     margin-right: auto;
-
-    .content-area {
+    .site-main {
       width: 65%;
       border-right: 1px solid #e1e1e1;
       padding: 5%;
@@ -17,9 +16,8 @@
       padding: 5%;
     }
   }
-  .entry-header {
+  .journal-thumbnail {
     position: relative;
-
     img {
       width: 100%;
     }
@@ -30,7 +28,7 @@
       color: white;
       top: 2%;
       left: 0;
-      padding: 3%;
+      padding: 2%;
       font-size: 30px;
       a {
         text-decoration: none;
@@ -45,4 +43,32 @@
       color: white;
     }
   }
+  .read-more-btn{
+       padding-top: 1.8%;
+        padding-bottom: 1.8%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border: solid 1px black;
+        text-decoration: none;
+        color:black;
+        font-family: 'Novecento Sans Web', sans-serif;
+        font-size: 16px;
+        margin-top: 1em;
+        margin-bottom: 100px;
+
+  }
+  .entry-content{
+  margin-bottom: 0;
+  p{
+    margin-bottom: 5%;
+
+  }
 }
+.journal-section{
+  margin-bottom: 5%;
+}
+  }
+
+
+
+

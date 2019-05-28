@@ -1,7 +1,7 @@
 /* Home and Page About */
 
-.home,
-.page-template{
+.home,  
+.page-template {
   .site-header {
     position: absolute;
     a {
@@ -60,7 +60,8 @@
 
 
 .blog, .archive,
-.product-tempalte-default,
+.page-template,
+.product-template-default,
 .post-template-default{
 .site-header{
   border: 1px solid #e1e1e1;

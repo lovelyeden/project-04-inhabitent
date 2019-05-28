@@ -1,70 +1,80 @@
 .archive {
-  .page-title {
-    text-align: center;
-  }
-  .product-terms {
-    text-align: center;
-    display: flex;
-width: 1120px;
-margin: 0;
-
-    
-  }
-
-p {
+  .product-section-head {
+    width: 1120px;
+    margin: auto;
+    .shop-title {
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 45px;
+    }
+    .product-terms {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      border-bottom: 1.2px dashed #c8c8c8;
+      .product-term {
+        margin: 30px;
+      }
+    }
+    p {
       margin-bottom: 0;
       a {
         text-decoration: none;
         color: $color_link;
+        font-size: 20px;
         text-transform: uppercase;
-      font-family: Novecento Sans Web, sans-serif;
-
+        font-family: Novecento Sans Web, sans-serif;
       }
-    }
-  
-  
-
-.product-grid{
-    margin-left: auto;
-  margin-top: 100px;
-  margin-right: auto;
-  display: grid;
-  width: 1120px;
-
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 1.5rem;
-  article{
-        border-right: 1px solid #e1e1e1;
-    display: flex;
-    flex-direction: column;
-    .entry-header{
-      width: 100%;
-      height: 250px;
-      img{
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    p{
-      margin:0;
     }
   }
-}
+  .product-grid {
+    margin-left: auto;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-right: auto;
+    display: grid;
+    width: 1120px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    .thumbnails {
+      border: 1px solid #e1e1e1;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      .container {
+        .img-wrap {
+          width: 100%;
+          height: 250px;
+          a{
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+          .thumb-text {
+            background: yellow;
+            p {
+              font-family: 'Merriweather Web', serif;
+            }
+          }
+        }
+        }
+      }
+    } /* end of thumbnails */
+  } /* end of.product-grid */
+} /* end of archive */
 
-}
-
-
-/* Taxonomy*/
-.taxonomy-container{
-  border-top: 1px dashed #e1e1e1;
-  width: 1120px;
-  margin-left: auto;
-  margin-top: 100px;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 1.5rem;
-}
-.taxonomy-description{
-  text-align: center;
-}
+// /* Taxonomy*/
+// .taxonomy-container {
+//   border-top: 1px dashed #e1e1e1;
+//   width: 1120px;
+//   margin-left: auto;
+//   margin-top: 100px;
+//   margin-right: auto;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-gap: 1.5rem;
+// }
+// .taxonomy-description {
+//   text-align: center;
+// }

@@ -3,37 +3,51 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
 }
-
-
 
 /* Widget Contact */
-.widget_text{
-	.textwidget{
-		a{
-			text-decoration: none;
-			font-family: 'Merriweather Web', serif;
-		}
-		span{
-			font-family: 'Merriweather Web', serif;
-		}
-	}
+.widget_text {
+  .textwidget {
+	  margin-bottom: 3rem;
+    a {
+      text-decoration: none;
+      font-family: 'Merriweather Web', serif;
+    }
+    span {
+      font-family: 'Merriweather Web', serif;
+    }
+  }
 }
-
-.widget-area{
-	.aside{
-			margin-bottom: 50px;
-		
+.widget {
+		  margin-bottom: 3rem;
+  p {
+    font-family: 'Merriweather Web', serif;
+    span {
+      font-family: 'Merriweather Web', serif;
+    }
+  }
+}
+.widget_archive{
+		  margin-bottom: 3rem;
+	ul{
+		list-style: none;
+	
+		padding: 0;
+			  font-family: 'Merriweather Web', serif;
+			  margin: 0;
+			  a{
+				  	text-decoration: none;
+			  }
 	}
 }

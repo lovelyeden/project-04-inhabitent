@@ -6,22 +6,23 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID();?>" <?php post_class();?>>
-<div class="entry-header">
-<a href="<?php echo get_the_permalink(); ?>">
+<section class="thumbnails">
+<div class="container">
+	<div class="img-wrap">
+	<a href="<?php echo get_the_permalink(); ?>">
 		<?php if (has_post_thumbnail()): ?>
 			<?php the_post_thumbnail('large');?>
 		<?php endif;?>
-		</a>
-</div><!-- .entry-header -->
+	</a>
+</div>
 
-	<div class="entry-content">
-	<?php the_title();?>...........
+	<div class=".thumb-text">
+		<?php the_title();?>.......
 		<?php echo CFS()->get('product_price'); ?>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
-
+	
+	</div>
+</div>
+</section>
 
 
  
