@@ -35,7 +35,7 @@ the_archive_description('<div class="taxonomy-description">', '</div>');
 			<?php get_template_part('template-parts/content', 'none');?>
 
 		<?php endif;?>
-
+	<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read More &#x2192;</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

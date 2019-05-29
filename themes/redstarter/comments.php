@@ -23,9 +23,11 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
 		</h2>
+		
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
+
+			<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
 			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
 
@@ -33,6 +35,7 @@ if ( post_password_required() ) {
 				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
 
 			</div><!-- .nav-links -->
+
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 

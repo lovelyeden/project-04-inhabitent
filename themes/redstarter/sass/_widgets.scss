@@ -16,38 +16,42 @@
   display: none;
 }
 
-/* Widget Contact */
+
+/* Widget Contact Sidebar*/
 .widget_text {
   .textwidget {
-	  margin-bottom: 3rem;
+    margin-bottom: 3rem;
     a {
       text-decoration: none;
       font-family: 'Merriweather Web', serif;
+      color: $color_link;
     }
     span {
       font-family: 'Merriweather Web', serif;
     }
   }
 }
-.widget {
-		  margin-bottom: 3rem;
+.tent-biz-hours-class {
+  margin-bottom: 3rem;
   p {
     font-family: 'Merriweather Web', serif;
-    span {
+
+    .day-of-week {
       font-family: 'Merriweather Web', serif;
     }
   }
 }
-.widget_archive{
-		  margin-bottom: 3rem;
-	ul{
-		list-style: none;
-	
-		padding: 0;
-			  font-family: 'Merriweather Web', serif;
-			  margin: 0;
-			  a{
-				  	text-decoration: none;
-			  }
-	}
+.widget_archive {
+  margin-bottom: 3rem;
+  ul {
+    list-style: none;
+
+    padding: 0;
+    font-family: 'Merriweather Web', serif;
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: $color_link;
+    }
+  }
 }

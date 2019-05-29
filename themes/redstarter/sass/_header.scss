@@ -1,6 +1,6 @@
 /* Home and Page About */
 
-.home,  
+.home,
 .page-template {
   .site-header {
     position: absolute;
@@ -42,12 +42,14 @@
       }
     }
     .main-navigation {
-      font-family: '', sans-serif;
+      font-family: 'Novecento Sans Web', sans-serif;
       display: flex;
       justify-content: flex-end;
       font-family: 'Novecento Sans Web', sans-serif;
       font-style: normal;
       font-weight: normal;
+      margin: 10px;
+
       li {
         padding-left: 1.5rem;
         a {
@@ -58,11 +60,13 @@
   }
 }
 
-
-.search, .blog, .archive, .page-find-us,
+.search,
+.blog,
+.archive,
+.page-find-us,
 .product-template-default,
-.post-template-default{
-.site-header{
-  border: 1px solid #e1e1e1;
-}
+.post-template-default {
+  .site-header {
+    border: 1px solid #e1e1e1;
+  }
 }

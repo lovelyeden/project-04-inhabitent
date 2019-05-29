@@ -14,14 +14,16 @@
 			<?php the_post_thumbnail('large');?>
 		<?php endif;?>
 	</a>
-</div>
-
-	<div class=".thumb-text">
-		<p>
-		<?php the_title();?>.......
-		<?php echo CFS()->get('product_price'); ?>
-</p>
 	</div>
+
+
+	<div class="thumb-text">
+		<div class="title"><?php the_title();?></div>
+		<div class="dot"></div>
+		<div class="price"><?php echo CFS()->get('product_price'); ?></div>
+	</div>
+
+
 </div>
 </section>
 

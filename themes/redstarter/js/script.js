@@ -1,23 +1,15 @@
-(function($){
-$('.search-field').hide();  
-
-$('.icon-search').on('click', function(event){
-event.preventDefault();
-});
-
-$('.icon-search').on('click', function(){
-    $('.search-field').toggle().focus(slow);
-    // $('.search-field').focus();
-});
- 
-//  on blur on searchfield,preventfunction, searchfield hide//
-// $('.fa-search').on('click', function() {
-//     $('.search-form').toggle();
-//     $('.search-field').focus();
-//   });
-
-//   $('.search-field').on('blur', function() {
-//     $('.search-form').toggle();
-//   });
+(function($) {
+    // Hide the form
+  $('.search-field').hide();
+    // Prevent Default
+  $('.icon-search').on('click', function(event) {
+    event.preventDefault();
+      $('.search-field') .toggle().focus();
+  });
+   $('.search-field').blur(function(){
+      $('.search-field').hide();
+   });
 })(jQuery);
+
+
 

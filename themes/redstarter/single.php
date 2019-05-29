@@ -22,11 +22,15 @@ get_header(); ?>
 			<span><a><i class="fab fa-pinterest-p"></i>Pin</a></span>
 			</p>
 				<div>
+				
 			<?php
+			
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
+				
 				endif;
+				
 			?>
 
 		<?php endwhile; // End of the loop. ?>

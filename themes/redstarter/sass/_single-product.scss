@@ -1,5 +1,5 @@
 .single-product-container {
-  padding:3%;
+  padding: 3%;
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
@@ -7,10 +7,10 @@
   width: 1120px;
   margin: auto;
   .image-container {
-        max-width: 50%;
-       height: 400px;
+    max-width: 50%;
+    height: 400px;
     img {
-         height:100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -22,56 +22,28 @@
       color: $color_product-h1;
       margin: 0;
     }
-    .price{
-        font-family: 'Novecento Sans Web', sans-serif;
-        font-size: 30px;
-        margin: 0;
-    }
-    p{
+    .price {
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 30px;
       margin: 0;
     }
-  
   }
 }
-  .social-media {
-        span {
-          padding-top: 1.8%;
-          padding-bottom: 1.8%;
-          padding-left: 5%;
-          padding-right: 5%;
-          border: solid 1px black;
-          a {
-            text-transform: uppercase;
-            font-family: 'Novecento Sans Web', sans-serif;
-            color: black;
-            font-size: 16px;
-            i {
-              margin-right: 2%;
-            }
-          }
-        }
+.social-media {
+  span {
+    padding-top: 1.8%;
+    padding-bottom: 1.8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: solid 1px black;
+    a {
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif;
+      color: black;
+      font-size: 16px;
+      i {
+        margin-right: 2%;
+      }
     }
-
-
-
-
-
-
-/* Single Post */
-.single-post{
-.entry-footer{
-  background: transparent;
-  display: inline-block;
-  .cat-links{
-margin-right: 50px;
-text-transform: uppercase;
   }
-  .tags-links{
-    text-transform: uppercase;
-  }
-}
-a{
-  font-size: 16px;
-  text-decoration: none;
-}
 }
