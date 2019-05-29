@@ -17,9 +17,10 @@
 </div>
 
 	<div class=".thumb-text">
+		<p>
 		<?php the_title();?>.......
 		<?php echo CFS()->get('product_price'); ?>
-	
+</p>
 	</div>
 </div>
 </section>

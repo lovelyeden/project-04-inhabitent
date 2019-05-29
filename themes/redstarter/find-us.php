@@ -7,28 +7,19 @@
 
 get_header();?>
 
-
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if (have_posts()): ?>
-
-			<?php if (is_home() && !is_front_page()): ?>
-
-			<?php endif;?>
-
-			<?php /* Start the Loop */?>
 			<?php while (have_posts()): the_post();?>
 
-									<?php get_template_part('template-parts/content', 'home');?>
+									<?php get_template_part('template-parts/content', 'findus');?>
 
-								<?php endwhile;?>
-
-		<?php else: ?>
-			<?php get_template_part('template-parts/content', 'none');?>
-		<?php endif;?>
+								<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-
+	</div><!-- #primary -->
 
 <?php get_sidebar();?>
 <?php get_footer();?>
+
+

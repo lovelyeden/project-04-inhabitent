@@ -26,7 +26,7 @@
         text-transform: uppercase;
         font-family: Novecento Sans Web, sans-serif;
       }
-    }
+    }/*end of product-section head*/
   }
   .product-grid {
     margin-left: auto;
@@ -46,35 +46,24 @@
         .img-wrap {
           width: 100%;
           height: 250px;
-          a{
-          img {
-            height: 100%;
-            object-fit: cover;
-          }
-          .thumb-text {
-            background: yellow;
-            p {
-              font-family: 'Merriweather Web', serif;
+          a {
+            img {
+              height: 100%;
+              object-fit: cover;
             }
+          } /* end of thumbnails */
+        } /* end of .img-wrap */
+        .thumb-text{
+          p{
+            color:blue;
           }
-        }
         }
       }
-    } /* end of thumbnails */
-  } /* end of.product-grid */
+    }
+  }
 } /* end of archive */
 
-// /* Taxonomy*/
-// .taxonomy-container {
-//   border-top: 1px dashed #e1e1e1;
-//   width: 1120px;
-//   margin-left: auto;
-//   margin-top: 100px;
-//   margin-right: auto;
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-gap: 1.5rem;
-// }
-// .taxonomy-description {
-//   text-align: center;
-// }
+
+.taxonomy-description{
+  text-align: center;
+}

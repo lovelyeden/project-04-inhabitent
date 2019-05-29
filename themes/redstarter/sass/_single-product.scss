@@ -30,7 +30,10 @@
     p{
       margin: 0;
     }
-    .social-media {
+  
+  }
+}
+  .social-media {
         span {
           padding-top: 1.8%;
           padding-bottom: 1.8%;
@@ -48,5 +51,27 @@
           }
         }
     }
+
+
+
+
+
+
+/* Single Post */
+.single-post{
+.entry-footer{
+  background: transparent;
+  display: inline-block;
+  .cat-links{
+margin-right: 50px;
+text-transform: uppercase;
   }
+  .tags-links{
+    text-transform: uppercase;
+  }
+}
+a{
+  font-size: 16px;
+  text-decoration: none;
+}
 }
