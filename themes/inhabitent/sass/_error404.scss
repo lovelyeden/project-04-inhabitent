@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# 404 Page
+--------------------------------------------------------------*/
+
+.error404 {
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: left;
+      padding: 0;
+      a {
+        text-decoration: none;
+        color: $color_link;
+      }
+    }
+    input[type='search'] {
+      display: block;
+    }
+  }
+  p {
+    font-family: $font_main;
+  }
+  select {
+    font-family: $font_main;
+  }
+  .search-field{
+      display: block;
+  }
+
+}

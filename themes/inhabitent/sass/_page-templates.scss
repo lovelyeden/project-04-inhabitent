@@ -1,0 +1,271 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+.front-page-hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+  background-size: cover, cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  front-page-logo {
+    text-align: center;
+  }
+}
+.shop-container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .product-terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+
+    .product-term {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      text-align: center;
+      max-width: 23%;
+      height: 260px;
+      padding: 0.5rem;
+      p {
+        font-family: $font_main;
+        font-weight: normal;
+        font-style: normal;
+        color: #404040;
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+
+      .link {
+        text-decoration: none;
+        background: $color_link;
+        padding: 0.7rem;
+        color: $color_font;
+        font-family: $font_headings;
+        font-size: 14px;
+        margin-top: 1em;
+      }
+    }
+    img {
+      max-width: 30%;
+    }
+  }
+}
+
+.fp-journal {
+  .journal-container {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 35px;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        border: 1px solid #e1e1e1;
+        height: 480px;
+        max-width: 32%;
+
+        .thumbnail-wrapper {
+          margin: 0;
+          img {
+            height: 280px;
+          }
+        }
+        .post-text {
+          padding: 1em;
+          margin-bottom: 2em;
+          .fp-post-meta {
+            font-family: $font_main;
+            font-weight: normal;
+            font-style: normal;
+          }
+          a {
+            text-decoration: none;
+          }
+          h3 {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color_link;
+          }
+
+          .read-more-btn {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            background-color: transparent;
+            border: 1px solid #000;
+            color: #000;
+            font-size: 0.9rem;
+            line-height: 1;
+            &:hover {
+              background: $color_link;
+              color: $color_font;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.adventure-section {
+  margin-top: 2em;
+  margin-bottom: 5rem;
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .adventure-container {
+    margin: auto;
+    width: 1120px;
+    margin-bottom: 2em;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2f 2fr;
+    grid-template-rows: auto auto;
+    div {
+      max-width: 100%;
+      h1{
+        color: #fff;
+        margin-left:5%;
+        font-family: $font_main;
+        font-weight: 400;
+      }
+      a{
+        padding: 2%;
+               margin-left:5%;
+       border: 1px solid #fff;
+    color: #fff; 
+      }
+    }
+  }
+  .adventure-btn { 
+    margin: auto;
+    width: 1120px;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.8em;
+      background: $color_link;
+      font-size: 18px;
+      color: $color_font;
+    }
+  }
+
+  /* This is for grid item*/
+  .item1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696 url(../../assets/images/adventure-photos/canoe-girl.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    img {
+      width: 10px;
+    }
+  }
+  .item2 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/beach-bonfire.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    img {
+      width: 10px;
+    }
+  }
+
+  .item3 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/mountain-hikers.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    img {
+      width: 10px;
+    }
+  }
+
+  .item4 {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)),
+    #969696  url(../../assets/images/adventure-photos/night-sky.jpg) no-repeat top;
+    background-position: center;
+    background-size: cover;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    img {
+      width: 10px;
+    }
+  }
+}
+
+/* About Page */
+.page-template-page-about {
+  h1 {
+    color: $color_font;
+    font-family: $font_headings;
+    font-size: 3rem;
+  }
+}
+.entry-content {
+  margin-bottom: 3em;
+  margin-top: auto;
+  .hero-image-header {
+    height: 100vh;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2f1339;
+    font-family: $font_headings;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    font-family: $font_main;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2em;
+  }
+}

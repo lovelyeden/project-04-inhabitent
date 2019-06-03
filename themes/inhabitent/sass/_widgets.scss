@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+  margin: 0 0 $base__space-unit;
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
+
+
+/* Widget Contact Sidebar*/
+.widget_text {
+  .textwidget {
+    margin-bottom: 3rem;
+    a {
+      text-decoration: none;
+      font-family: $font_main;
+      color: $color_link;
+    }
+    span {
+      font-family: $font_main;
+    }
+  }
+}
+.tent-biz-hours-class {
+  margin-bottom: 3rem;
+  p {
+    font-family: $font_main;
+
+    .day-of-week {
+      font-family: $font_main;
+    }
+  }
+}
+.widget_archive {
+  margin-bottom: 3rem;
+  ul {
+    list-style: none;
+
+    padding: 0;
+    font-family: $font_main;
+    margin: 0;
+    a {
+      text-decoration: none;
+      color: $color_link;
+    }
+  }
+}
