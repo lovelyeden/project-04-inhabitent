@@ -14,9 +14,7 @@
         color: $color_link;
       }
     }
-    input[type='search'] {
-      display: block;
-    }
+ 
   }
   p {
     font-family: $font_main;
@@ -24,8 +22,4 @@
   select {
     font-family: $font_main;
   }
-  .search-field{
-      display: block;
-  }
-
 }

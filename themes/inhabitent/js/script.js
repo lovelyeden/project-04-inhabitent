@@ -1,14 +1,16 @@
 
-(function($) {
-    // Hide the form
-    // Prevent Default
-  $('.icon-search').on('click', function(event) {
-    event.preventDefault();
-      $('.search-field') .toggle(500).focus();
+(function($) { 
+  $(function() {
+    const iconSearch = ('.icon-search');
+    const searchField = ('.search-field');
+      iconSearch.on('click', function(event) {
+        event.preventDefault();
+        searchField.toggle(500).focus();
+    });
+      searchField.blur(function() {
+      searchField.hide(500);
+      });
   });
-   $('.search-field').blur(function(){
-      $('.search-field').hide(slow);
-   });
 })(jQuery);
 
 

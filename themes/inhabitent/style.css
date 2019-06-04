@@ -1,10 +1,11 @@
 /*!
 Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
+Author: Lovely Eden
+Author URI: https://github.com/lovelyeden
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
+
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
@@ -293,7 +294,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: 'Novecento Sans Web', sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -671,28 +672,31 @@ a {
   margin-bottom: 3rem; }
   .widget_text .textwidget a {
     text-decoration: none;
-    font-family: 'Merriweather Web', serif;
+    font-family: "Merriweather Web", sans-serif;
     color: #248a83; }
   .widget_text .textwidget span {
-    font-family: 'Merriweather Web', serif; }
+    font-family: "Merriweather Web", sans-serif; }
 
 .tent-biz-hours-class {
   margin-bottom: 3rem; }
   .tent-biz-hours-class p {
-    font-family: 'Merriweather Web', serif; }
+    font-family: "Merriweather Web", sans-serif; }
     .tent-biz-hours-class p .day-of-week {
-      font-family: 'Merriweather Web', serif; }
+      font-family: "Merriweather Web", sans-serif; }
 
 .widget_archive {
   margin-bottom: 3rem; }
   .widget_archive ul {
     list-style: none;
     padding: 0;
-    font-family: 'Merriweather Web', serif;
+    font-family: "Merriweather Web", sans-serif;
     margin: 0; }
     .widget_archive ul a {
       text-decoration: none;
       color: #248a83; }
+
+.aside .widget-title {
+  font-size: 20px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -737,7 +741,7 @@ a {
 
 .comment-respond p {
   font-size: 18px;
-  font-family: 'Merriweather Web', serif; }
+  font-family: "Merriweather Web", sans-serif; }
 
 .comment-respond .comment-form-author,
 .comment-respond .comment-form-email,
@@ -745,7 +749,7 @@ a {
 .comment-respond .comment-form-cookies-consent,
 .comment-respond .comment-form-comment {
   font-size: 18px;
-  font-family: 'Novecento Sans Web', sans-serif; }
+  font-family: "Novecento Sans Web", sans-serif; }
 
 /* Read more Button */
 .tag .read-more-btn,
@@ -759,7 +763,7 @@ a {
   border: solid 1px black;
   text-decoration: none;
   color: black;
-  font-family: 'Novecento Sans Web', sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   font-size: 16px;
   margin-top: 1em;
   margin-bottom: 100px; }
@@ -770,7 +774,7 @@ a {
   color: #248a83; }
 
 .search p {
-  font-family: 'Merriweather Web', serif; }
+  font-family: "Merriweather Web", sans-serif; }
 
 /*--------------------------------------------------------------
 # Media
@@ -888,7 +892,7 @@ object {
       height: 260px;
       padding: 0.5rem; }
       .shop-container .product-terms .product-term p {
-        font-family: 'Merriweather Web', serif;
+        font-family: "Merriweather Web", sans-serif;
         font-weight: normal;
         font-style: normal;
         color: #404040;
@@ -899,7 +903,7 @@ object {
         background: #248a83;
         padding: 0.7rem;
         color: #fff;
-        font-family: 'Novecento Sans Web', sans-serif;
+        font-family: "Novecento Sans Web", sans-serif;
         font-size: 14px;
         margin-top: 1em; }
     .shop-container .product-terms img {
@@ -939,7 +943,7 @@ object {
         padding: 1em;
         margin-bottom: 2em; }
         .fp-journal .journal-container ul li .post-text .fp-post-meta {
-          font-family: 'Merriweather Web', sans-serif;
+          font-family: "Merriweather Web", sans-serif;
           font-weight: normal;
           font-style: normal; }
         .fp-journal .journal-container ul li .post-text a {
@@ -985,7 +989,7 @@ object {
       .adventure-section .adventure-container div h1 {
         color: #fff;
         margin-left: 5%;
-        font-family: 'Merriweather Web', serif;
+        font-family: "Merriweather Web", sans-serif;
         font-weight: 400; }
       .adventure-section .adventure-container div a {
         padding: 2%;
@@ -1047,29 +1051,161 @@ object {
 /* About Page */
 .page-template-page-about h1 {
   color: #fff;
-  font-family: 'Novecento Sans Web', sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   font-size: 3rem; }
+
+.page-template-page-about h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #2f1339;
+  font-family: "Novecento Sans Web", sans-serif; }
 
 .entry-content {
   margin-bottom: 3em;
   margin-top: auto; }
   .entry-content .hero-image-header {
     height: 100vh; }
-  .entry-content h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #2f1339;
-    font-family: 'Novecento Sans Web', sans-serif; }
   .entry-content p {
     margin-bottom: 1.5rem;
     margin-right: auto;
     margin-left: auto;
     max-width: 800px;
-    font-family: 'Merriweather Web', serif;
+    font-family: "Merriweather Web", sans-serif;
     text-align: justify;
     font-size: 1rem;
     line-height: 2em; }
 
+/* Shop Page */
+.archive .site-content .product-section-head {
+  width: 1120px;
+  margin: auto;
+  /* end of product-section head */ }
+  .archive .site-content .product-section-head .shop-title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 45px; }
+  .archive .site-content .product-section-head .product-terms {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
+    border-bottom: 1.2px dashed #c8c8c8; }
+    .archive .site-content .product-section-head .product-terms .product-term {
+      margin: 30px; }
+  .archive .site-content .product-section-head p {
+    margin-bottom: 0; }
+    .archive .site-content .product-section-head p a {
+      text-decoration: none;
+      color: #248a83;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Novecento Sans Web", sans-serif; }
+      .archive .site-content .product-section-head p a:hover {
+        color: #2f1339; }
+
+.archive .site-content .product-grid {
+  margin-left: auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-right: auto;
+  display: grid;
+  width: 1120px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem; }
+  .archive .site-content .product-grid .thumbnails {
+    border: 1px solid #e1e1e1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px; }
+    .archive .site-content .product-grid .thumbnails .container .img-wrap {
+      width: 100%;
+      height: 250px; }
+      .archive .site-content .product-grid .thumbnails .container .img-wrap img {
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+
+/* end of archive */
+/* Price */
+.thumb-text {
+  font-family: "Merriweather Web", sans-serif;
+  padding: 1rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px; }
+
+.title {
+  white-space: nowrap; }
+
+.dot {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden; }
+  .dot::after {
+    content: '..........................'; }
+
+/* Taxonomy Product */
+.taxonomy-description {
+  text-align: center;
+  font-family: "Merriweather Web", sans-serif; }
+
+/* Find Us Page */
+.page-template-default h1 {
+  font-size: 2.4em; }
+
+.page-template-default h2 strong {
+  color: #2f1339;
+  font-size: 2rem;
+  font-family: "Novecento Sans Web", sans-serif; }
+
+.page-template-default p h2 {
+  font-size: 2rem; }
+
+.page-template-default label {
+  font-family: "Novecento Sans Web", sans-serif;
+  color: #2f1339;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: #f4f4f4; }
+  .page-template-default label span {
+    color: #d99054; }
+  .page-template-default label input[type='text'],
+  .page-template-default label input[type='email'],
+  .page-template-default label input[type='password'],
+  .page-template-default label input[type='search'],
+  .page-template-default label textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+
+.page-template-default input[type='submit'] {
+  background: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: #fff;
+  border-radius: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1rem; }
+  .page-template-default input[type='submit'] span {
+    color: red; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1097,7 +1233,7 @@ footer {
     footer .first-container .contact-container h3 {
       color: #d99054; }
     footer .first-container .contact-container p {
-      font-family: 'Merriweather Web', serif;
+      font-family: "Merriweather Web", sans-serif;
       color: #fff; }
       footer .first-container .contact-container p i {
         padding: 0.2em;
@@ -1112,7 +1248,7 @@ footer {
         color: #d99054;
         font-size: 20px; }
       footer .first-container .business-container p {
-        font-family: Merriweather Web, serif;
+        font-family: "Merriweather Web", sans-serif;
         color: #fff; }
         footer .first-container .business-container p span {
           color: #fff;
@@ -1123,13 +1259,15 @@ footer {
         width: 70%; }
   footer .copyright {
     text-align: center;
-    font-family: Novecento Sans Web, sans-serif;
+    font-family: "Novecento Sans Web", sans-serif;
     text-transform: uppercase;
     color: #fff;
     padding-top: 3em;
     padding-bottom: 1em; }
 
-/* Home and Page About */
+/*--------------------------------------------------------------
+# Home and Page About
+--------------------------------------------------------------*/
 .home .site-header,
 .page-template .site-header {
   position: absolute; }
@@ -1165,14 +1303,13 @@ footer {
     .site-header .nav-container .site-branding .site-logo img {
       width: 30%; }
     .site-header .nav-container .main-navigation {
-      font-family: 'Novecento Sans Web', sans-serif;
+      font-family: "Novecento Sans Web", sans-serif;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      font-family: 'Novecento Sans Web', sans-serif;
       font-style: normal;
       font-weight: normal;
       margin: 10px; }
@@ -1182,6 +1319,7 @@ footer {
           text-transform: uppercase; }
 
 .search .site-header,
+.error404 .site-header,
 .blog .site-header,
 .archive .site-header,
 .page-find-us .site-header,
@@ -1189,7 +1327,9 @@ footer {
 .post-template-default .site-header {
   border: 1px solid #e1e1e1; }
 
-/* Journal Post */
+/*--------------------------------------------------------------
+# Journal
+--------------------------------------------------------------*/
 .blog .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1290,10 +1430,11 @@ footer {
   font-size: 16px;
   text-decoration: none;
   color: #248a83;
-  font-family: 'Novecento Sans Web', sans-serif; }
+  font-family: "Novecento Sans Web", sans-serif; }
 
-/*Find us */
+/* Find us */
 .page-find-us .site-content,
+.error404 .site-content,
 .search .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,38 +1443,31 @@ footer {
   margin-left: auto;
   margin-right: auto; }
   .page-find-us .site-content .content-area,
+  .error404 .site-content .content-area,
   .search .site-content .content-area {
     width: 75%;
     border-right: 1px solid #e1e1e1;
     padding: 3%; }
   .page-find-us .site-content .widget-area,
+  .error404 .site-content .widget-area,
   .search .site-content .widget-area {
     width: 25%;
     border-left: 1px solid #e1e1e1;
     padding: 3%; }
 
-.page .entry-content h2 {
-  text-align: left;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-family: Novecento Sans Web, sans-serif; }
+.page p strong {
+  font-family: "Merriweather Web", sans-serif;
+  font-size: 16px; }
 
-.page .entry-content p strong {
-  font-family: Novecento Sans Web, sans-serif;
-  font-size: 35px; }
-
-.page .entry-content figure {
+.page figure {
   text-align: left;
   margin: 0; }
-  .page .entry-content figure iframe {
+  .page figure iframe {
     text-align: left;
     width: 100%;
     max-height: 300px; }
-    .page .entry-content figure iframe div {
+    .page figure iframe div {
       width: 100%; }
-
-.page label {
-  font-family: Novecento Sans Web, sans-serif; }
 
 /* Category and Tag */
 .category .site-content,
@@ -1381,91 +1515,41 @@ footer {
   background: #248a83;
   color: #fff; }
 
-.archive .site-content .product-section-head {
+/* Journal Archive */
+.archive .site-content {
   width: 1120px;
-  margin: auto;
-  /* end of product-section head */ }
-  .archive .site-content .product-section-head .shop-title {
-    text-align: center;
-    margin-bottom: 0;
-    font-size: 45px; }
-  .archive .site-content .product-section-head .product-terms {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 0;
-    border-bottom: 1.2px dashed #c8c8c8; }
-    .archive .site-content .product-section-head .product-terms .product-term {
-      margin: 30px; }
-  .archive .site-content .product-section-head p {
-    margin-bottom: 0; }
-    .archive .site-content .product-section-head p a {
-      text-decoration: none;
-      color: #248a83;
-      font-size: 20px;
-      text-transform: uppercase;
-      font-family: Novecento Sans Web, sans-serif; }
-      .archive .site-content .product-section-head p a:hover {
-        color: #2f1339; }
-
-.archive .site-content .product-grid {
-  margin-left: auto;
-  margin-bottom: 70px;
-  margin-top: 50px;
-  margin-right: auto;
-  display: grid;
-  width: 1120px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem; }
-  .archive .site-content .product-grid .thumbnails {
-    border: 1px solid #e1e1e1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 300px; }
-    .archive .site-content .product-grid .thumbnails .container .img-wrap {
-      width: 100%;
-      height: 250px; }
-      .archive .site-content .product-grid .thumbnails .container .img-wrap img {
-        height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover; }
-
-/* end of archive */
-/* Price */
-.thumb-text {
-  font-family: 'Merriweather Web', serif;
-  padding: 1rem;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  width: 250px; }
+  display: flex; }
+  .archive .site-content .entry-header {
+    position: relative; }
+    .archive .site-content .entry-header img {
+      width: 100%; }
+    .archive .site-content .entry-header .entry-title {
+      position: absolute;
+      max-width: 70%;
+      background-color: #248a83;
+      color: white;
+      top: 2%;
+      left: 0;
+      padding: 2%;
+      font-size: 30px; }
+      .archive .site-content .entry-header .entry-title a {
+        text-decoration: none;
+        color: white; }
+        .archive .site-content .entry-header .entry-title a:hover {
+          color: #f0e4d1; }
+    .archive .site-content .entry-header .entry-meta {
+      position: absolute;
+      background-color: #248a83;
+      bottom: 2%;
+      right: 0;
+      color: white; }
 
-.title {
-  white-space: nowrap; }
-
-.dot {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  overflow: hidden; }
-  .dot::after {
-    content: '..........................'; }
-
-/* Taxonomy Product */
-.taxonomy-description {
-  text-align: center;
-  font-family: 'Merriweather Web', serif; }
-
+/*--------------------------------------------------------------
+# Single Product Page
+--------------------------------------------------------------*/
 .single-product-container {
   padding: 3%;
   display: -webkit-box;
@@ -1493,7 +1577,7 @@ footer {
       color: #d99054;
       margin: 0; }
     .single-product-container .entry-content .price {
-      font-family: 'Novecento Sans Web', sans-serif;
+      font-family: "Novecento Sans Web", sans-serif;
       font-size: 30px;
       margin: 0; }
 
@@ -1507,7 +1591,7 @@ footer {
     background: #248a83; }
   .social-media span a {
     text-transform: uppercase;
-    font-family: 'Novecento Sans Web', sans-serif;
+    font-family: "Novecento Sans Web", sans-serif;
     color: black;
     font-size: 16px; }
     .social-media span a:hover {
@@ -1527,14 +1611,9 @@ footer {
     .error404 ul li a {
       text-decoration: none;
       color: #248a83; }
-  .error404 ul input[type='search'] {
-    display: block; }
 
 .error404 p {
   font-family: "Merriweather Web", sans-serif; }
 
 .error404 select {
   font-family: "Merriweather Web", sans-serif; }
-
-.error404 .search-field {
-  display: block; }

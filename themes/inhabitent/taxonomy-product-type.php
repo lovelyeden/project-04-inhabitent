@@ -13,11 +13,6 @@ get_header();?>
 the_archive_description('<div class="taxonomy-description">', '</div>');?>
 
 
-
-
-
-
-
 		<?php if (have_posts()): ?>
 		<div class="product-grid">
 			<?php while (have_posts()): the_post();?>

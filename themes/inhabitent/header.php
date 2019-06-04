@@ -43,10 +43,7 @@
 </div>
 
 
-
 				</nav><!-- #site-navigation -->
-
 				</div><!-- .nav-container -->
 			</header><!-- #masthead -->
-
 			<div id="content" class="site-content">

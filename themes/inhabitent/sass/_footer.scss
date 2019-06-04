@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 footer {
   display: flex;
   flex-direction: column;
@@ -16,7 +19,7 @@ footer {
         color: #d99054;
       }
       p {
-        font-family: $font_family_headings;
+        font-family: $font_main;
         color: $color_font;
         i {
           padding: 0.2em;
