@@ -514,6 +514,21 @@ button {
     -webkit-transition-delay: 5s;
             transition-delay: 5s; }
 
+.post-template-default input[type='submit'],
+.page-template-default input[type='submit'] {
+  background: #248a83;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: #fff;
+  border-radius: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1rem; }
+  .post-template-default input[type='submit'] span,
+  .page-template-default input[type='submit'] span {
+    color: red; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -753,6 +768,8 @@ a {
 
 /* Read more Button */
 .tag .read-more-btn,
+.fp-journal .read-more-btn,
+.archive .date .read-more-btn,
 .date .read-more-btn,
 .category .read-more-btn,
 .blog .read-more-btn,
@@ -768,6 +785,15 @@ a {
   font-size: 16px;
   margin-top: 1em;
   margin-bottom: 100px; }
+  .tag .read-more-btn:hover,
+  .fp-journal .read-more-btn:hover,
+  .archive .date .read-more-btn:hover,
+  .date .read-more-btn:hover,
+  .category .read-more-btn:hover,
+  .blog .read-more-btn:hover,
+  .search .read-more-btn:hover {
+    background: #248a83;
+    color: #fff; }
 
 /* Search */
 .search a {
@@ -953,18 +979,6 @@ object {
           text-decoration: none;
           text-transform: uppercase;
           color: #248a83; }
-        .fp-journal .journal-container ul li .post-text .read-more-btn {
-          text-decoration: none;
-          text-transform: uppercase;
-          padding: 0.75rem 1.5rem;
-          background-color: transparent;
-          border: 1px solid #000;
-          color: #000;
-          font-size: 0.9rem;
-          line-height: 1; }
-          .fp-journal .journal-container ul li .post-text .read-more-btn:hover {
-            background: #248a83;
-            color: #fff; }
 
 .adventure-section {
   margin-top: 2em;
@@ -1012,7 +1026,6 @@ object {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/adventure-photos/canoe-girl.jpg) no-repeat top;
     background-position: center;
     background-size: cover;
-    height: 500px;
     grid-row-start: 1;
     grid-row-end: 9;
     grid-column-start: 1;
@@ -1026,8 +1039,11 @@ object {
     background-size: cover;
     grid-row-start: 1;
     grid-row-end: 5;
+    height: 280px;
     grid-column-start: 3;
     grid-column-end: 5; }
+    .adventure-section .item2 h1 {
+      font-size: 1.9em; }
     .adventure-section .item2 img {
       width: 10px; }
   .adventure-section .item3 {
@@ -1036,7 +1052,10 @@ object {
     background-position: center;
     background-size: cover;
     grid-row-start: 5;
-    grid-row-end: 9; }
+    grid-row-end: 9;
+    height: 300px; }
+    .adventure-section .item3 h1 {
+      font-size: 1.5em; }
     .adventure-section .item3 img {
       width: 10px; }
   .adventure-section .item4 {
@@ -1045,7 +1064,10 @@ object {
     background-position: center;
     background-size: cover;
     grid-row-start: 5;
+    width: 300px;
     grid-row-end: 9; }
+    .adventure-section .item4 h1 {
+      font-size: 1.5em; }
     .adventure-section .item4 img {
       width: 10px; }
 
@@ -1190,19 +1212,6 @@ object {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px; }
-
-.page-template-default input[type='submit'] {
-  background: #248a83;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  color: #fff;
-  border-radius: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 1rem; }
-  .page-template-default input[type='submit'] span {
-    color: red; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -1555,6 +1564,9 @@ footer {
 .date .widget-area {
   padding: 3%; }
 
+.comments-link a {
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Single Product Page
 --------------------------------------------------------------*/
@@ -1594,7 +1606,8 @@ footer {
   padding-bottom: 1.8%;
   padding-left: 5%;
   padding-right: 5%;
-  border: solid 1px black; }
+  border: solid 1px black;
+  margin: 3px; }
   .social-media span:hover {
     background: #248a83; }
   .social-media span a {
@@ -1610,18 +1623,24 @@ footer {
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
-.error404 ul {
+.error404 ul, .search ul {
   padding: 0; }
-  .error404 ul li {
+  .error404 ul li, .search ul li {
     list-style: none;
     text-align: left;
     padding: 0; }
-    .error404 ul li a {
+    .error404 ul li a, .search ul li a {
       text-decoration: none;
       color: #248a83; }
 
-.error404 p {
+.error404 p, .search p {
   font-family: "Merriweather Web", sans-serif; }
 
-.error404 select {
+.error404 select, .search select {
   font-family: "Merriweather Web", sans-serif; }
+
+.error404 .site-content .search-field, .search .site-content .search-field {
+  display: block; }
+
+.error404 .site-content .icon-search, .search .site-content .icon-search {
+  display: none; }

@@ -69,6 +69,8 @@
 
 /* Read more Button */
 .tag,
+.fp-journal,
+.archive .date,
 .date,
 .category,
 .blog,
@@ -85,6 +87,10 @@
     font-size: 16px;
     margin-top: 1em;
     margin-bottom: 100px;
+    &:hover {
+      background: $color_link;
+      color: $color_font;
+    }
   }
 }
 
@@ -95,6 +101,6 @@
     color: $color_link;
   }
   p {
-    font-family:$font_main; 
-}
+    font-family: $font_main;
+  }
 }

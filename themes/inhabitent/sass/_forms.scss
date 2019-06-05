@@ -114,3 +114,20 @@ button{
 		  transition-delay: 5s;
 	  }
 }
+
+.post-template-default,
+.page-template-default{
+  input[type='submit'] {
+    background: $color_background_button;
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border-radius: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1rem;
+    span {
+      color: red;
+    }
+  }
+}
