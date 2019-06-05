@@ -8,10 +8,10 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes();?>>
 	<head>
-		<meta charset="<?php home_url('charset');?>">
+		<meta charset="<?php bloginfo('charset');?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link rel="pingback" href="<?php home_url('pingback_url');?>">
+		<link rel="pingback" href="<?php bloginfo('pingback_url');?>">
 	<?php wp_head();?>
 	</head>
 
@@ -23,8 +23,8 @@
 					<div class="site-branding">
 						<div class="site-logo">
 							<a href="<?php echo home_url('/'); ?>" rel="home">
-								<img class="logo-green" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent.svg">
-								<img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg">
+								<img class="logo-green" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent.svg" alt="inhabitent logo green">
+								<img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent logo white">
 							</a>
 						</div>
 
@@ -44,4 +44,5 @@
 					</nav><!--end of #site-navigation -->
 				</div><!-- end of .nav-container -->
 			</header><!-- #masthead -->
-		<div id="content" class="site-content">
+			</div>
+	<div id="content" class="site-content">

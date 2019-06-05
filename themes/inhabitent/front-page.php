@@ -22,7 +22,7 @@ get_header();?>
 			<div class="product-terms">
 				<?php foreach ($terms as $term):?>
 				<div class ="product-term">
-					<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/' . $term->slug . '.svg' ?>" />
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/'. $term->slug . '.svg' ?>" alt="product icons">
 					<p>
 						<?php echo $term->description; ?>
 					</p>

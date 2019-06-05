@@ -1533,7 +1533,8 @@ footer {
   display: -ms-flexbox;
   display: flex; }
   .date .site-content .entry-header {
-    position: relative; }
+    position: relative;
+    margin-top: 2em; }
     .date .site-content .entry-header img {
       width: 100%; }
     .date .site-content .entry-header .entry-title {

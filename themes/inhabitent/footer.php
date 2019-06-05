@@ -40,12 +40,12 @@
 							<span><strong>Saturday:</strong> 10am to 2pm</span>
 						</p>
 						<p>
-							<span><strong>Sunday:</strong> Closed</strong></span>
+							<span><strong>Sunday:</strong> Closed</span>
 						</p>
 					</div><!-- end of .business-container -->
 
 					<div class="footer-logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo"/>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" alt="Inhabitent Logo">
 					</div>
 				</div><!--End of first container -->
 	
