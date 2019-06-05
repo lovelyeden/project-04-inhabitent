@@ -18,10 +18,8 @@
 	<body <?php body_class();?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
-
 			<header id="masthead" class="site-header" role="banner">
 				<div class="nav-container">
-
 					<div class="site-branding">
 						<div class="site-logo">
 							<a href="<?php echo home_url('/'); ?>" rel="home">
@@ -30,20 +28,20 @@
 							</a>
 						</div>
 
-					<!-- <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php home_url('name');?></a></h1> -->
+						<h1 class="site-title screen-reader-text"> 
+						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php home_url('name');?></a>
+						</h1>
 						<p class="site-description"><?php home_url('description');?></p>
 					</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
+						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
 
-<div class="header-search">
-	<?php get_search_form();?>
-</div>
-
-
-				</nav><!-- #site-navigation -->
-				</div><!-- .nav-container -->
+						<div class="header-search">
+							<?php get_search_form();?>
+						</div>
+					</nav><!--end of #site-navigation -->
+				</div><!-- end of .nav-container -->
 			</header><!-- #masthead -->
-			<div id="content" class="site-content">
+		<div id="content" class="site-content">

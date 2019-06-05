@@ -77,7 +77,6 @@
       padding: 3%;
     }
   }
-
   .entry-header {
     position: relative;
     img {
@@ -121,7 +120,6 @@
     font-family: $font_headings;
   }
 }
-
 /* Find us */
 .page-find-us,
 .error404,
@@ -184,7 +182,6 @@
       padding: 3%;
     }
   }
-
   .entry-header {
     position: relative;
     img {
@@ -196,7 +193,6 @@
     position: absolute;
     padding: 0.5em;
     background: $color_link;
-
     a {
       color: #fff;
       text-decoration: none;
@@ -211,7 +207,7 @@
   }
 }
 /* Journal Archive */
-.archive{
+.date{
   .site-content{
     width: 1120px;
     margin: auto;
@@ -245,8 +241,14 @@
       right: 0;
       color: white;
     }
-  
     }
+  }
+  .site-main{
+    padding: 3%;
+    border-right: 1px solid #e1e1e1;
+  }
+  .widget-area{
+     padding: 3%;
   }
 }
 

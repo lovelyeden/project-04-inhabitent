@@ -753,6 +753,7 @@ a {
 
 /* Read more Button */
 .tag .read-more-btn,
+.date .read-more-btn,
 .category .read-more-btn,
 .blog .read-more-btn,
 .search .read-more-btn {
@@ -1516,17 +1517,17 @@ footer {
   color: #fff; }
 
 /* Journal Archive */
-.archive .site-content {
+.date .site-content {
   width: 1120px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .archive .site-content .entry-header {
+  .date .site-content .entry-header {
     position: relative; }
-    .archive .site-content .entry-header img {
+    .date .site-content .entry-header img {
       width: 100%; }
-    .archive .site-content .entry-header .entry-title {
+    .date .site-content .entry-header .entry-title {
       position: absolute;
       max-width: 70%;
       background-color: #248a83;
@@ -1535,17 +1536,24 @@ footer {
       left: 0;
       padding: 2%;
       font-size: 30px; }
-      .archive .site-content .entry-header .entry-title a {
+      .date .site-content .entry-header .entry-title a {
         text-decoration: none;
         color: white; }
-        .archive .site-content .entry-header .entry-title a:hover {
+        .date .site-content .entry-header .entry-title a:hover {
           color: #f0e4d1; }
-    .archive .site-content .entry-header .entry-meta {
+    .date .site-content .entry-header .entry-meta {
       position: absolute;
       background-color: #248a83;
       bottom: 2%;
       right: 0;
       color: white; }
+
+.date .site-main {
+  padding: 3%;
+  border-right: 1px solid #e1e1e1; }
+
+.date .widget-area {
+  padding: 3%; }
 
 /*--------------------------------------------------------------
 # Single Product Page

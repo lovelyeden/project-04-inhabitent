@@ -34,7 +34,6 @@ function inhabitent_setup() {
 		'gallery',
 		'caption',
 	) );
-
 }
 endif; // inhabitent_setup
 add_action( 'after_setup_theme', 'inhabitent_setup' );
@@ -74,7 +73,6 @@ function inhabitent_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
-
 	return $stylesheet_uri;
 }
 add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
