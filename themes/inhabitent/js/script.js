@@ -6,8 +6,11 @@
         event.preventDefault();
         searchField.toggle(500).focus();
     });
+    
       searchField.blur(function() {
-      searchField.hide(500);
+        if (searchField.val() === ''){
+           searchField.hide(500);
+        }
       });
   });
 })(jQuery);

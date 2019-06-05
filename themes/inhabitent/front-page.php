@@ -40,6 +40,7 @@ get_header();?>
 		<section class="fp-journal">
 			<div class="journal-container">
 				<h2>Inhabitent Journal</h2>
+			<article>
 			<ul>
 				<?php $args = array('post_type' => 'post', 'posts_per_page' => 3, 'order' => 'ASC');
 				$journal_posts = get_posts($args); // returns an array of posts
@@ -66,6 +67,7 @@ get_header();?>
 
 			wp_reset_postdata();?>
 			</ul>
+					</article>
 			</div><!-- #end of journal-container -->
 		</section><!-- #end of fp-journal -->
 
