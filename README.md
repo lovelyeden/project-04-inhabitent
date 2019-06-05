@@ -1,6 +1,6 @@
 # Project-04-Inhabitent
   A multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. 
-  
+ ![](themes/inhabitent/assets/images/inhabitent.png)
 ## Goals 
   To be able to create a multi-page website for a company called Inhabitent Camping Supply Co. using using WordPress as a content management system.
   
